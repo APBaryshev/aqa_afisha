@@ -225,6 +225,8 @@ npm run docker:build
 npm run docker:test
 ```
 
+---
+
 ## Генерация отчетов
 
 Установка Allure
@@ -255,6 +257,8 @@ npm run allure:generate
 npm run allure:open
 ```
 
+---
+
 ## Работа с Docker
 
 ```bash
@@ -272,6 +276,8 @@ npm run docker:report
 ```
 
 >Примечание: При первом запуске или после изменений в коде необходимо выполнить `docker:build` или `docker:full` для сборки образа.
+
+---
 
 ## Ручная установка
 
