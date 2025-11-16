@@ -1,0 +1,29 @@
+{
+    "name": "aqa_afisha",
+    "version": "1.0.0",
+    "description": "Autotests for live.mts.ru with Playwright + TypeScript",
+    "type": "module",
+    "scripts": {
+        "test": "npx playwright test",
+        "test:allure": "npx playwright test --reporter=allure-playwright",
+        "allure:generate": "allure generate ./allure-results --clean",
+        "allure:open": "allure open ./allure-report",
+        "allure:serve": "allure serve ./allure-results",
+        "test:report": "npm run test:allure && npm run allure:generate && npm run allure:open",
+        "docker:build": "docker build -t aqa-afisha .",
+        "docker:test": "docker run -v $(pwd)/allure-results:/app/allure-results aqa-afisha",
+        "docker:full": "npm run docker:build && npm run docker:test"
+    },
+    "keywords": [
+        "playwright",
+        "typescript",
+        "automation",
+        "mts"
+    ],
+    "devDependencies": {
+        "@playwright/test": "^1.56.1",
+        "@types/node": "^24.9.2",
+        "allure-playwright": "^2.9.2",
+        "typescript": "^5.3.0"
+    }
+}

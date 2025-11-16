@@ -1,0 +1,179 @@
+{
+  "config": {
+    "configFile": "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/playwright.config.ts",
+    "rootDir": "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/node_modules/allure-playwright/dist/index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_top_section.spec.ts",
+      "file": "test_top_section.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тесты блока ТОП-10",
+          "file": "test_top_section.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка блока ТОП-10",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11032,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Постер виден\n"
+                        },
+                        {
+                          "text": "Кешбек виден\n"
+                        },
+                        {
+                          "text": "Название видно\n"
+                        },
+                        {
+                          "text": "Рубрика видна\n"
+                        },
+                        {
+                          "text": "Дата видна\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Прокрутить до блока ТОП-10",
+                          "duration": 1051
+                        },
+                        {
+                          "title": "Проверка отображения блока ТОП-10",
+                          "duration": 15
+                        },
+                        {
+                          "title": "Проверка, что есть 10 карточек",
+                          "duration": 3
+                        },
+                        {
+                          "title": "Проверить элементов в карточке",
+                          "duration": 2715,
+                          "steps": [
+                            {
+                              "title": "Проверка прокрутки",
+                              "duration": 2661
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2025-11-16T06:49:46.249Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "322baee7a99ad268c498-a0d802c56ce491e9bac6",
+              "file": "test_top_section.spec.ts",
+              "line": 13,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-16T06:49:45.751Z",
+    "duration": 11739.082999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
