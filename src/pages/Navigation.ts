@@ -44,7 +44,7 @@ export class NavigationComponent {
         return names;
     }
 
-    async checkTabHoverEffect(tabName: string): Promise<boolean> {
+    async checkTabHoverEffect(tabName: string): Promise<{ changed: boolean; hoverColor: string }> {
         try {
             const colorElement = this.page.locator(
                 `[data-test-id="PageHeaderNavigation/Item/${tabName}"] ${MainPageLocators.NAVIGATION_COLOR_ELEMENT}`
@@ -61,10 +61,13 @@ export class NavigationComponent {
                 return window.getComputedStyle(el).backgroundColor;
             });
 
-            return originalColor !== hoverColor;
+            return {
+                changed: originalColor !== hoverColor,
+                hoverColor: hoverColor
+            };
         } catch (error) {
             console.log(`Error checking hover for tab "${tabName}":`, error);
-            return false;
+            return { changed: false, hoverColor: '' };
         }
     }
 

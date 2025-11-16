@@ -28,7 +28,9 @@
       [
         "/home/baryshev/Документы/apb/gitlab_apb/mts/aqa_afisha/node_modules/allure-playwright/dist/index.js",
         {
-          "outputFolder": "allure-results"
+          "outputFolder": "allure-results",
+          "detail": true,
+          "suiteTitle": false
         }
       ]
     ],
@@ -64,20 +66,20 @@
   },
   "suites": [
     {
-      "title": "test_top_section.spec.ts",
-      "file": "test_top_section.spec.ts",
+      "title": "test_nav_tabs.spec.ts",
+      "file": "test_nav_tabs.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Тесты блока ТОП-10",
-          "file": "test_top_section.spec.ts",
+          "title": "Тесты блока навигации",
+          "file": "test_nav_tabs.spec.ts",
           "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "Проверка блока ТОП-10",
+              "title": "Проверка табов навигации",
               "ok": true,
               "tags": [],
               "tests": [
@@ -92,7 +94,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11032,
+                      "duration": 8534,
                       "errors": [],
                       "stdout": [
                         {
@@ -108,48 +110,37 @@
                           "text": "Обработка баннеров завершена\n"
                         },
                         {
-                          "text": "Постер виден\n"
+                          "text": "Visible navigation tabs: [\n  \u001b[32m'Сертификаты'\u001b[39m, \u001b[32m'Ёлки'\u001b[39m,\n  \u001b[32m'Концерты'\u001b[39m,    \u001b[32m'Театр'\u001b[39m,\n  \u001b[32m'Детям'\u001b[39m,       \u001b[32m'Выставки'\u001b[39m,\n  \u001b[32m'Спорт'\u001b[39m,       \u001b[32m'Стендап'\u001b[39m,\n  \u001b[32m'Ещё'\u001b[39m\n]\n"
                         },
                         {
-                          "text": "Кешбек виден\n"
-                        },
-                        {
-                          "text": "Название видно\n"
-                        },
-                        {
-                          "text": "Рубрика видна\n"
-                        },
-                        {
-                          "text": "Дата видна\n"
+                          "text": "Стендап и Ещё видны на полном экране\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Прокрутить до блока ТОП-10",
-                          "duration": 1051
+                          "title": "Проверка видимости блока навигации",
+                          "duration": 90
                         },
                         {
-                          "title": "Проверка отображения блока ТОП-10",
-                          "duration": 15
+                          "title": "Проверка видимости табов Стендап и Ещё",
+                          "duration": 11
                         },
                         {
-                          "title": "Проверка, что есть 10 карточек",
-                          "duration": 3
+                          "title": "Проверка, что таб \"Сертификаты\" имеет уникальную иконку",
+                          "duration": 13
                         },
                         {
-                          "title": "Проверить элементов в карточке",
-                          "duration": 2715,
-                          "steps": [
-                            {
-                              "title": "Проверка прокрутки",
-                              "duration": 2661
-                            }
-                          ]
+                          "title": "Проверка эффекта наведения на таб Сертификаты",
+                          "duration": 894
+                        },
+                        {
+                          "title": "Проверка эффекта наведения на таб Концерты",
+                          "duration": 888
                         }
                       ],
-                      "startTime": "2025-11-16T06:49:46.249Z",
+                      "startTime": "2025-11-16T13:33:26.182Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -157,9 +148,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "322baee7a99ad268c498-a0d802c56ce491e9bac6",
-              "file": "test_top_section.spec.ts",
-              "line": 13,
+              "id": "443e5745cd4e59c8730d-d7472a0bd8ccb3633af3",
+              "file": "test_nav_tabs.spec.ts",
+              "line": 14,
               "column": 5
             }
           ]
@@ -169,8 +160,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-16T06:49:45.751Z",
-    "duration": 11739.082999999999,
+    "startTime": "2025-11-16T13:33:25.796Z",
+    "duration": 9036.858,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

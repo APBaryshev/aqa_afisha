@@ -47,13 +47,19 @@ test.describe("Тесты блока навигации", () => {
         });
 
         await test.step("Проверка эффекта наведения на таб Сертификаты", async () => {
-            const hasHover = await mainPage.checkTabHoverEffect("Сертификаты");
-            expect(hasHover).toBeTruthy();
+            const hoverResult = await mainPage.checkTabHoverEffect("Сертификаты");
+            expect(hoverResult.changed).toBeTruthy();
+
+            // Проверяем конкретный цвет в RGBA формате
+            expect(hoverResult.hoverColor).toBe("rgba(0, 0, 0, 0.07)");
         });
 
         await test.step("Проверка эффекта наведения на таб Концерты", async () => {
-            const hasHover = await mainPage.checkTabHoverEffect("Концерты");
-            expect(hasHover).toBeTruthy();
+            const hoverResult = await mainPage.checkTabHoverEffect("Концерты");
+            expect(hoverResult.changed).toBeTruthy();
+
+            // Проверяем конкретный цвет в RGBA формате
+            expect(hoverResult.hoverColor).toBe("rgba(0, 0, 0, 0.07)");
         });
     });
 });

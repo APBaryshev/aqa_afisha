@@ -17,7 +17,7 @@ export class EventsComponent {
         await this.page.waitForTimeout(1000);
     }
 
-    async checkTitleHover(): Promise<boolean> {
+    async checkTitleHover(): Promise<{ changed: boolean; hoverColor: string }> {
         const originalColor = await this.eventsTitle.evaluate((el) => {
             return window.getComputedStyle(el).color;
         });
@@ -29,7 +29,11 @@ export class EventsComponent {
             return window.getComputedStyle(el).color;
         });
 
-        return originalColor !== hoverColor;
+        return {
+            changed: originalColor !== hoverColor,
+            hoverColor: hoverColor
+        };
+
     }
 
     async getEventCardsCount(): Promise<number> {

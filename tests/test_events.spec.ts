@@ -22,8 +22,13 @@ test.describe("Тест блока событий", () => {
         await test.step("Проверка заголовка и hover-эффекта", async () => {
             await expect(mainPage.eventsTitle).toBeVisible();
 
-            const hasHoverEffect = await mainPage.checkTitleHover();
-            expect(hasHoverEffect).toBe(true);
+            const hoverResult = await mainPage.checkTitleHover();
+
+            // Проверяем что эффект есть
+            expect(hoverResult.changed).toBe(true);
+
+            // Проверяем конкретный цвет в RGB формате
+            expect(hoverResult.hoverColor).toBe("rgb(247, 47, 47)");
         });
 
         await test.step("Проверка карточек событий и их расположение", async () => {

@@ -123,7 +123,7 @@ export class MainPage extends BasePage {
         return await this.navigation.getVisibleTabNames();
     }
 
-    async checkTabHoverEffect(tabName: string): Promise<boolean> {
+    async checkTabHoverEffect(tabName: string): Promise<{ changed: boolean; hoverColor: string }> {
         return await this.navigation.checkTabHoverEffect(tabName);
     }
 
@@ -171,9 +171,9 @@ export class MainPage extends BasePage {
         await this.events.scrollToEventsSection();
     }
 
-    async checkTitleHover(): Promise<boolean> {
-        return await this.events.checkTitleHover();
-    }
+    async checkTitleHover(): Promise<{ changed: boolean; hoverColor: string }> {
+    return await this.events.checkTitleHover();
+}
 
     async scrollToTopSection(): Promise<void> {
         await this.topSection.scrollToTopSection();
