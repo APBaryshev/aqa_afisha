@@ -37,9 +37,16 @@ npm install
 echo Сборка Docker образа...
 npm run docker:build
 
-echo Запуск тестов и отчета...
-npm run docker:full
+echo Запуск тестов...
+npm run docker:test
 
 echo.
-echo Готово! Отчет должен открыться автоматически
+echo Готово! Тесты завершены.
+echo.
+echo Для открытия отчета выполните:
+echo    npm run allure:serve
+echo.
+echo Или перейдите в папку scripts и запустите:
+echo    open-report.bat
+echo.
 pause
