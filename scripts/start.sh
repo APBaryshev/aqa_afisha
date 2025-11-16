@@ -61,4 +61,4 @@ echo "Для открытия отчета выполните:"
 echo "   npm run allure:serve"
 echo ""
 echo "Или перейдите в папку scripts и запустите:"
-echo "   ./open-report.sh
+echo "   ./open-report.sh"
