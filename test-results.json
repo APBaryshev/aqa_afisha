@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 6
     },
     "preserveOutput": "always",
     "reporter": [
@@ -45,7 +45,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "chromium",
         "name": "chromium",
@@ -65,6 +65,414 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "test_banners.spec.ts",
+      "file": "test_banners.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тест баннеров",
+          "file": "test_banners.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка функциональности баннеров",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14648,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Найдено 108 видимых баннеров\n"
+                        },
+                        {
+                          "text": "Кнопка Далее видна\n"
+                        },
+                        {
+                          "text": "Прокручены один раз вправо\n"
+                        },
+                        {
+                          "text": "Кнопка Назад появилась после прокрутки\n"
+                        },
+                        {
+                          "text": "Прокручены влево\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка вправо 1\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка вправо 2\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка влево 1\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка влево 2\n"
+                        },
+                        {
+                          "text": "Все проверки прокрутки выполнены\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Проверка видимости баннеров",
+                          "duration": 796
+                        },
+                        {
+                          "title": "Проверка прокрутки баннеров",
+                          "duration": 2256
+                        },
+                        {
+                          "title": "Дополнительные проверки прокрутки",
+                          "duration": 4238
+                        }
+                      ],
+                      "startTime": "2025-11-21T14:21:32.296Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "085dd1c396edf3d81ee8-05c856c01d643f3d3d93",
+              "file": "test_banners.spec.ts",
+              "line": 13,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_calendar.spec.ts",
+      "file": "test_calendar.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тесты блока Календарь",
+          "file": "test_calendar.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка функциональности календаря",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11237,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Прокручен один раз вправо\n"
+                        },
+                        {
+                          "text": "Левая стрелка появилась после прокрутки\n"
+                        },
+                        {
+                          "text": "Прокручен один раз влево\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка вправо\n"
+                        },
+                        {
+                          "text": "Дополнительная прокрутка влево\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Проверка, что календарь виден и имеет даты",
+                          "duration": 30
+                        },
+                        {
+                          "title": "Проверка прокрутки",
+                          "duration": 2198
+                        },
+                        {
+                          "title": "Дополнительная проверка прокрутки",
+                          "duration": 2121
+                        }
+                      ],
+                      "startTime": "2025-11-21T14:21:32.440Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "085b4641e2e44cf229f6-4f83615fc03320dffc1c",
+              "file": "test_calendar.spec.ts",
+              "line": 13,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_events.spec.ts",
+      "file": "test_events.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тест блока событий",
+          "file": "test_events.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка блока событий",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8915,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Карточки 3 в ряд\n"
+                        },
+                        {
+                          "text": "Постер виден\n"
+                        },
+                        {
+                          "text": "Лайк виден\n"
+                        },
+                        {
+                          "text": "Цена видна\n"
+                        },
+                        {
+                          "text": "Кешбек виден\n"
+                        },
+                        {
+                          "text": "Название видно\n"
+                        },
+                        {
+                          "text": "Дата и место видны\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Прокрутить до блока событий",
+                          "duration": 1085
+                        },
+                        {
+                          "title": "Проверка отображения подборки событий",
+                          "duration": 33
+                        },
+                        {
+                          "title": "Проверка заголовка и hover-эффекта",
+                          "duration": 714
+                        },
+                        {
+                          "title": "Проверка карточек событий и их расположение",
+                          "duration": 6
+                        },
+                        {
+                          "title": "Проверка элементов карточках событий",
+                          "duration": 40
+                        }
+                      ],
+                      "startTime": "2025-11-21T14:21:32.500Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "39236f3413a2780df96a-861936a27352c364c16b",
+              "file": "test_events.spec.ts",
+              "line": 13,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_main_feed.spec.ts",
+      "file": "test_main_feed.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тест основного фида",
+          "file": "test_main_feed.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка основного фида и истории просмотра",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 20003,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Найдено карточек: 54\n"
+                        },
+                        {
+                          "text": "Карточка 0: рейтинг есть\n"
+                        },
+                        {
+                          "text": "Карточка 1: рейтинг есть\n"
+                        },
+                        {
+                          "text": "Карточка 2: рейтинг есть\n"
+                        },
+                        {
+                          "text": "Открыто событий: 2\n"
+                        },
+                        {
+                          "text": "Блок \"Вы смотрели\" виден: true\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Прокрутка до основного фида",
+                          "duration": 2012
+                        },
+                        {
+                          "title": "Проверка карточек и необходимых элементов",
+                          "duration": 162
+                        },
+                        {
+                          "title": "Проверка открытия события",
+                          "duration": 7578
+                        },
+                        {
+                          "title": "Проверка блока \"Вы смотрели\"",
+                          "duration": 3026
+                        }
+                      ],
+                      "startTime": "2025-11-21T14:21:32.324Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6432488df4d35fbb4d85-ea26759d92ead2f0582d",
+              "file": "test_main_feed.spec.ts",
+              "line": 12,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "test_nav_tabs.spec.ts",
       "file": "test_nav_tabs.spec.ts",
@@ -91,10 +499,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 8534,
+                      "duration": 8571,
                       "errors": [],
                       "stdout": [
                         {
@@ -110,7 +518,7 @@
                           "text": "Обработка баннеров завершена\n"
                         },
                         {
-                          "text": "Visible navigation tabs: [\n  \u001b[32m'Сертификаты'\u001b[39m, \u001b[32m'Ёлки'\u001b[39m,\n  \u001b[32m'Концерты'\u001b[39m,    \u001b[32m'Театр'\u001b[39m,\n  \u001b[32m'Детям'\u001b[39m,       \u001b[32m'Выставки'\u001b[39m,\n  \u001b[32m'Спорт'\u001b[39m,       \u001b[32m'Стендап'\u001b[39m,\n  \u001b[32m'Ещё'\u001b[39m\n]\n"
+                          "text": "Visible navigation tabs: [\n  \u001b[32m'Сертификаты'\u001b[39m, \u001b[32m'Ёлки'\u001b[39m,\n  \u001b[32m'Концерты'\u001b[39m,    \u001b[32m'Театр'\u001b[39m,\n  \u001b[32m'Детям'\u001b[39m,       \u001b[32m'Кино'\u001b[39m,\n  \u001b[32m'Спорт'\u001b[39m,       \u001b[32m'Стендап'\u001b[39m,\n  \u001b[32m'Ещё'\u001b[39m\n]\n"
                         },
                         {
                           "text": "Стендап и Ещё видны на полном экране\n"
@@ -121,26 +529,26 @@
                       "steps": [
                         {
                           "title": "Проверка видимости блока навигации",
-                          "duration": 90
+                          "duration": 119
                         },
                         {
                           "title": "Проверка видимости табов Стендап и Ещё",
-                          "duration": 11
+                          "duration": 10
                         },
                         {
                           "title": "Проверка, что таб \"Сертификаты\" имеет уникальную иконку",
-                          "duration": 13
+                          "duration": 19
                         },
                         {
                           "title": "Проверка эффекта наведения на таб Сертификаты",
-                          "duration": 894
+                          "duration": 909
                         },
                         {
                           "title": "Проверка эффекта наведения на таб Концерты",
-                          "duration": 888
+                          "duration": 877
                         }
                       ],
-                      "startTime": "2025-11-16T13:33:26.182Z",
+                      "startTime": "2025-11-21T14:21:32.372Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -156,13 +564,116 @@
           ]
         }
       ]
+    },
+    {
+      "title": "test_top_section.spec.ts",
+      "file": "test_top_section.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Тесты блока ТОП-10",
+          "file": "test_top_section.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Проверка блока ТОП-10",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 11241,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Закрытие баннеров...\n"
+                        },
+                        {
+                          "text": "Первый баннер закрыт\n"
+                        },
+                        {
+                          "text": "Второй баннер закрыт\n"
+                        },
+                        {
+                          "text": "Обработка баннеров завершена\n"
+                        },
+                        {
+                          "text": "Постер виден\n"
+                        },
+                        {
+                          "text": "Кешбек виден\n"
+                        },
+                        {
+                          "text": "Название видно\n"
+                        },
+                        {
+                          "text": "Рубрика видна\n"
+                        },
+                        {
+                          "text": "Дата видна\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Прокрутить до блока ТОП-10",
+                          "duration": 1048
+                        },
+                        {
+                          "title": "Проверка отображения блока ТОП-10",
+                          "duration": 27
+                        },
+                        {
+                          "title": "Проверка, что есть 10 карточек",
+                          "duration": 8
+                        },
+                        {
+                          "title": "Проверить элементов в карточке",
+                          "duration": 2759,
+                          "steps": [
+                            {
+                              "title": "Проверка прокрутки",
+                              "duration": 2692
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2025-11-21T14:21:32.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "322baee7a99ad268c498-a0d802c56ce491e9bac6",
+              "file": "test_top_section.spec.ts",
+              "line": 13,
+              "column": 5
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-16T13:33:25.796Z",
-    "duration": 9036.858,
-    "expected": 1,
+    "startTime": "2025-11-21T14:21:31.812Z",
+    "duration": 20833.226000000002,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

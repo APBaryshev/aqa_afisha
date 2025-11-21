@@ -1,0 +1,223 @@
+{
+  "cookies": [
+    {
+      "name": "vpuid",
+      "value": "4siww3fxpv",
+      "domain": "runtime.strm.yandex.ru",
+      "path": "/videos/vplv3n2zsy5yxctezu4r/outputs",
+      "expires": 1795270753.303268,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax",
+      "partitionKey": "https://yandex.ru",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "vpuid",
+      "value": "46nydbvliv",
+      "domain": "runtime.strm.yandex.ru",
+      "path": "/videos/vplvoucypqytydnz7i4j/outputs",
+      "expires": 1795270753.306801,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax",
+      "partitionKey": "https://yandex.ru",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "i",
+      "value": "CRD7VSNzotkOqig2NezV0f4YgFpEGunh3q0QBrLV+XxTglu4Y7q1OIMOXN9MjptTP+5dEyoTscPJNNh6w62Mi2qBlsM=",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294751.722729,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yandexuid",
+      "value": "9012939421763734751",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294752.851885,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yashr",
+      "value": "1420628401763734751",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1795270751.722806,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "afisha.sid",
+      "value": "s%3AMQcnHBlwkyIzKrE0hyTo7tWaigqWt1Uv.%2FXt%2Bl5d1kyCoO%2FvxPxM1KqSWjo3%2F%2Fgcc5GFGMHQuSQE",
+      "domain": "afisha.yandex.ru",
+      "path": "/",
+      "expires": 1795270753.30797,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yabs-sid",
+      "value": "143573591763734752",
+      "domain": "mc.yandex.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yuidss",
+      "value": "9012939421763734751",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294752.851922,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ymex",
+      "value": "2079094752.yrts.1763734752",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1795270752,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1795270753,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://yandex.ru",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "gdpr",
+      "value": "0",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_uid",
+      "value": "1763734753447176657",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1795270753,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_d",
+      "value": "1763734753",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1795270753,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "is_gdpr",
+      "value": "0",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294753.150977,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "is_gdpr_b",
+      "value": "CMfFKhCZ5AI=",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294753.151013,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bh",
+      "value": "EiciQ2hyb21pdW0iO3Y9IjE0MSIsICJOb3Q/QV9CcmFuZCI7dj0iOCIqAj8wOgciTGludXgiYOHpgckGahncyumIDvKst6UL+/rw5w3r//32D/3szocI",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294753.151022,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_yasc",
+      "value": "AnmJXU6B4vT4SmvHbDJv9/23sMidcl9VJF4hgXAvvVpQIlgA8OarxbtLMmFzOcXA39KE",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1798294753.339892,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://afisha.yandex.ru",
+      "localStorage": [
+        {
+          "name": "_ym_synced",
+          "value": "{}"
+        },
+        {
+          "name": "_ym_retryReqs",
+          "value": "{}"
+        },
+        {
+          "name": "_ym115081_lsid",
+          "value": "1130660778417"
+        },
+        {
+          "name": "_ym_wasSynced",
+          "value": "{\"time\":1763734752959,\"params\":{\"sbp\":{\"a\":\"lnn+no501sLIV+E9d4/iAQh6ylMqFCAG10/9hYO8Nptc4FAZzRVf0wbSJgNUuxj1\",\"b\":\"I2JdZIRIxanrF7zTehH0gearJOek8603EDz72PsBBbSv0WsqR9m34o6aSDb9tz28\"},\"eu\":0,\"hittoken\":\"1763734752_5aabbe51d43f081d2bf52118f33ff8c3805e65876baed3c0398387262ea0306a\",\"wstoken\":\"10857.cmdMs1vsQb0rbjzCSZ_WSXApSrHANPa9TEM6pRQHIuwoKvL4zP6R2QDlD2VY9vXi4ZtQ54a3E1cr--5ts9JpZP61CIgPODsjQgA_-QPAlHo,.l2c4OUSjIkrS5MW5s0MPxSD3rg4,\",\"hidv2\":\"6921532976535175229\",\"ymclid\":\"6921532976535175229\"}}"
+        },
+        {
+          "name": "_ym_uid",
+          "value": "\"1763734753447176657\""
+        },
+        {
+          "name": "_ym115081:0_reqNum",
+          "value": "37"
+        },
+        {
+          "name": "_ym3_lsid",
+          "value": "1539818056338"
+        },
+        {
+          "name": "_ym3:0_reqNum",
+          "value": "28"
+        },
+        {
+          "name": "yachat-unread",
+          "value": "{\"currentTimestamp\":1763734753204,\"expiredTimestamp\":1763735053204,\"hasAuth\":false,\"response\":{\"Ttl\":401}}"
+        }
+      ]
+    }
+  ]
+}

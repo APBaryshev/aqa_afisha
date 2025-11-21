@@ -64,6 +64,13 @@ export class MainPage extends BasePage {
     }
 
     async open(): Promise<void> {
+        // Проверяем что состояние загружено
+        const currentUrl = this.page.url();
+        if (currentUrl.includes("passport.yandex.ru") || currentUrl.includes("captcha")) {
+            console.log("Возможно, срок хранения истек. Пожалуйста, запустите captcha:setup еще раз.");
+            throw new Error("Обнаружена CAPTCHA - срок хранения истек");
+        }
+
         await this.navigateTo("https://afisha.yandex.ru");
         await this.maximizeWindow();
         await this.waitForPageLoad();
@@ -172,8 +179,8 @@ export class MainPage extends BasePage {
     }
 
     async checkTitleHover(): Promise<{ changed: boolean; hoverColor: string }> {
-    return await this.events.checkTitleHover();
-}
+        return await this.events.checkTitleHover();
+    }
 
     async scrollToTopSection(): Promise<void> {
         await this.topSection.scrollToTopSection();

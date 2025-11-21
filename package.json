@@ -5,6 +5,10 @@
     "type": "module",
     "scripts": {
         "test": "npx playwright test",
+        "test:headed": "npx playwright test --headed",
+        "captcha:setup": "npx ts-node scripts/setup-captcha.ts",
+        "captcha:refresh": "rm src/captcha-state.json && npm run auth:setup",
+        "test:with-state": "npx playwright test --project=chromium",
         "test:allure": "npx playwright test --reporter=allure-playwright",
         "allure:generate": "allure generate ./allure-results --clean",
         "allure:open": "allure open ./allure-report",

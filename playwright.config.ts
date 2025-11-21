@@ -12,6 +12,7 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+
     testDir: "./tests",
     /* Run tests in files in parallel */
     fullyParallel: false,
@@ -36,6 +37,10 @@ export default defineConfig({
     ],
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
+        // Геолокационные настройки для "реального" пользователя
+        locale: 'ru-RU',
+        timezoneId: 'Europe/Moscow',
+
         /* Base URL to use in actions like `await page.goto('')`. */
         baseURL: "https://afisha.yandex.ru",
 
@@ -47,6 +52,12 @@ export default defineConfig({
         /* Screenshot on failure */
         screenshot: "only-on-failure",
 
+         // Дополнительные настройки для правдоподобности
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        extraHTTPHeaders: {
+            'Accept-Language': 'ru-RU,ru;q=0.9,en;q=0.8',
+        },
+
         /* Video recording */
         // video: "retain-on-failure",
     },
@@ -57,7 +68,6 @@ export default defineConfig({
             name: "chromium",
             use: { ...devices["Desktop Chrome"] },
         },
-
         // {
         //   name: 'firefox',
         //   use: { ...devices['Desktop Firefox'] },
